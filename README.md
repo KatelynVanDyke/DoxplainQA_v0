@@ -2,7 +2,7 @@
 
 ## Overview
 
-**DoxplainQA** is a unified question–answering (QA) dataset constructed to support systematic evaluation, comparison, and explanation of QA models across heterogeneous source datasets. The dataset harmonizes multiple established QA benchmarks into a **single, normalized schema**, enabling consistent training, inference, and evaluation pipelines within the Doxplain framework.
+**DoxplainQA** is a **unified question–answering (QA) dataset** constructed to support **systematic evaluation, comparison, and explanation** of QA models across heterogeneous source datasets. The dataset harmonizes multiple established QA benchmarks into a **single, normalized schema**, enabling **consistent training, inference, and evaluation** pipelines within the Doxplain framework.
 
 The primary design goals are:
 
@@ -11,9 +11,7 @@ The primary design goals are:
 - Explicit provenance and traceability to original datasets  
 - Reproducibility through deterministic field mappings  
 
-DoxplainQA is intentionally *model-agnostic* and *task-general.
-
----
+DoxplainQA is intentionally **model-agnostic** and **task-general**.
 
 ## Unified Schema
 
@@ -26,8 +24,6 @@ Each record in DoxplainQA conforms to the following schema:
 | `question` | `str` | Natural language question |
 | `answer` | `str` | Canonical answer string |
 | `context` | `str` | Supporting textual context from which the answer is derived |
-
----
 
 ## Dataset Sources and Field Mappings
 
@@ -43,8 +39,6 @@ DoxplainQA currently integrates the following datasets:
 - `triviaqa_wiki`
 
 Each dataset is transformed independently into the unified schema using deterministic mappings documented below.
-
----
 
 ## Dataset-Specific Field Mappings
 
@@ -71,8 +65,6 @@ Clark et al., *BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Ques
 | `question` | `question` |
 | `answer` | Stringified boolean (`"yes"` / `"no"`) |
 | `context` | `passage` |
-
----
 
 ### 2. DROP
 
@@ -102,8 +94,6 @@ Dua et al., *DROP: A Reading Comprehension Benchmark Requiring Discrete Reasonin
 - Numerical and span answers are normalized to strings.
 - Questions without resolvable answers are excluded.
 
----
-
 ### 3. HotpotQA
 
 **Citation**  
@@ -127,8 +117,6 @@ Yang et al., *HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question An
 | `question` | `question` |
 | `answer` | `answer` |
 | `context` | Concatenated paragraph texts |
-
----
 
 ### 4. NarrativeQA
 
@@ -154,8 +142,6 @@ Kočiský et al., *The NarrativeQA Reading Comprehension Challenge*, TACL 2018. 
 | `answer` | `answer.text` |
 | `context` | Summary or full document text |
 
----
-
 ### 5. Natural Questions
 
 **Citation**  
@@ -179,8 +165,6 @@ Kwiatkowski et al., *Natural Questions: A Benchmark for Question Answering Resea
 | `question` | `question_text` |
 | `answer` | Extracted short-answer text |
 | `context` | `document_text` |
-
----
 
 ### 6. QASPER
 
@@ -206,8 +190,6 @@ Dasigi et al., *A Dataset of Information-Seeking Questions and Answers Anchored 
 | `answer` | `answer.answer_text` |
 | `context` | Concatenated evidence text |
 
----
-
 ### 7. SQuAD v2.0
 
 **Citation**  
@@ -231,8 +213,6 @@ Rajpurkar et al., *Know What You Don’t Know: Unanswerable Questions for SQuAD*
 | `question` | `question` |
 | `answer` | Answer span text (or empty for unanswerable) |
 | `context` | `context` |
-
----
 
 ### 8. TriviaQA (Wikipedia)
 
@@ -258,8 +238,6 @@ Joshi et al., *TriviaQA: A Large Scale Distantly Supervised Challenge Dataset fo
 | `answer` | `answer.value` |
 | `context` | Concatenated Wikipedia contexts |
 
----
-
 ## Design Rationale
 
 The DoxplainQA schema is intentionally minimal. All task-specific or structural information not expressible through the five core fields is removed to ensure:
@@ -269,8 +247,6 @@ The DoxplainQA schema is intentionally minimal. All task-specific or structural 
 - Cross-dataset comparability  
 
 This design prioritizes *practical interoperability* over dataset completeness.
-
----
 
 ## Licensing
 
@@ -286,8 +262,6 @@ This design prioritizes *practical interoperability* over dataset completeness.
 - TriviaQA (Apache 2.0)
 
 DoxplainQA introduces no additional licensing terms.
-
----
 
 ## Citation
 
