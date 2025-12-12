@@ -5,7 +5,7 @@ message: >
 type: dataset
 authors:
   - family-names: Van Dyke
-  - given-names: Katelyn
+    given-names: Katelyn
 year: 2025
 abstract: >
   DoxplainQA is a unified question–answering dataset that aggregates
