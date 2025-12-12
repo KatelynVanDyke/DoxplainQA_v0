@@ -1,5 +1,7 @@
 # DoxplainQA: A Unified Question–Answering Dataset
 
+View the HuggingFace published dataset [here](https://huggingface.co/datasets/TechQueen24/DoxplainQA/tree/main)
+
 ## Overview
 
 **DoxplainQA** is a **unified question–answering (QA) dataset** constructed to support **systematic evaluation, comparison, and explanation** of QA models across heterogeneous source datasets. The dataset harmonizes multiple established QA benchmarks into a **single, normalized schema**, enabling **consistent training, inference, and evaluation** pipelines within the Doxplain framework.
