@@ -265,12 +265,4 @@ DoxplainQA introduces no additional licensing terms.
 
 ## Citation
 
-Please **cite the original datasets** in all research conducted with DoxplainQA. If you would like to cite this repository, consider the details below.
-
-```bibtex
-@misc{doxplainqa,
-  title  = {DoxplainQA: A Unified Question--Answering Dataset},
-  author = {Van Dyke, Katelyn},
-  year   = {2025},
-  note   = {Unified schema aggregation of eight QA benchmarks}
-}
+Please **cite the original datasets** in all research conducted with DoxplainQA. If you would like to cite this repository, consider the `CITATION.cff` file included.
