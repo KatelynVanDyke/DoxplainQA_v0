@@ -51,7 +51,6 @@ Clark et al., *BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Ques
 
 | BoolQ Field | Description |
 |------------|-------------|
-| id | Question identifier |
 | question | Yes/no question |
 | passage | Supporting passage |
 | answer | Boolean label |
@@ -61,7 +60,7 @@ Clark et al., *BoolQ: Exploring the Surprising Difficulty of Natural Yes/No Ques
 | DoxplainQA Field | Source |
 |------------------|--------|
 | dataset | "boolq" |
-| id | id |
+| id | NaN |
 | question | question |
 | answer | Stringified boolean ("yes" / "no") |
 | context | passage |
